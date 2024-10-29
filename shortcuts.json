@@ -1014,6 +1014,13 @@
 					"DefaultBcsvPath": "/BgmParam/TrackControl.bcsv",
 					"RequiredFile": "/ScenarioData/FileSelect.reg",
 					"DefaultTooltip": "Allows altering of an AST's track controls."
+				},
+				{
+					"Type": "Shortcut",
+					"DefaultName": "MuteDefine",
+					"DefaultArchivePath": "/AudioRes/Info/BgmParam.arc",
+					"DefaultBcsvPath": "/BgmParam/MuteDefine.bcsv",
+					"RequiredFile": "/ScenarioData/FileSelect.reg"
 				}
 			]
 		},
