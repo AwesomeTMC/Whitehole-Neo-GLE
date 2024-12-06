@@ -12,4 +12,4 @@ Some BCSVs that are no longer used in GLE will not appear.
 Note: The `shortcuts.json` file will only apply these changes when `ScenarioData/FileSelect.reg` exists in your selected mod's directory.
 ## hashlookup.txt
 Hashes that appear in GLE only are added.
-Credits to BlueXD for the couple of new GLE-V3 hashes.
+Credits to BlueXD for some new GLE-V3/V4 hashes.

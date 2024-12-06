@@ -1551,3 +1551,6 @@ MuteSeq12
 MuteSeq13
 MuteSeq14
 MuteSeq15
+KeepHealth
+PeachStarGet
+StarPieceFollowGroupLimit
