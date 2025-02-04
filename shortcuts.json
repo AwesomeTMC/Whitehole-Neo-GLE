@@ -72,6 +72,79 @@
 					]
 				}, 
 				{
+					"Type": "Menu",
+					"DefaultName": "Alternate Stage Files",
+					"RequiredFile": "SMG2",
+					"MenuElements": [
+						{
+							"Type": "Shortcut",
+							"DefaultName": "DesignAreaObjInfo",
+							"DefaultArchivePath": "/StageData/%s/%sDesign.arc",
+							"DefaultBcsvPath": "/Stage/jmp/Placement/%s/AreaObjInfo",
+							"Variables": [
+								{
+									"VariableName": "StageName",
+									"VariableGetMessage": "Enter the stage's file name:",
+									"VariableListType": "StageName"
+								},
+								{
+									"VariableName": "StageName",
+									"RequiredFile": "SMG2"
+								},
+								{
+									"VariableName": "Layer",
+									"VariableGetMessage": "Enter the layer (ex. 'LayerP' NOT 'P'):"
+								}
+							],
+							"DefaultTooltip": "Contains all design-related areas, such as Light Control Areas."
+						},
+						{
+							"Type": "Shortcut",
+							"DefaultName": "SoundAreaObjInfo",
+							"DefaultArchivePath": "/StageData/%s/%sSound.arc",
+							"DefaultBcsvPath": "/Stage/jmp/Placement/%s/AreaObjInfo",
+							"Variables": [
+								{
+									"VariableName": "StageName",
+									"VariableGetMessage": "Enter the stage's file name:",
+									"VariableListType": "StageName"
+								},
+								{
+									"VariableName": "StageName",
+									"RequiredFile": "SMG2"
+								},
+								{
+									"VariableName": "Layer",
+									"VariableGetMessage": "Enter the layer (ex. 'LayerP' NOT 'P'):"
+								}
+							],
+							"DefaultTooltip": "Contains all sound-related areas, such as Background Music Change Areas or Play Sound Areas."
+						},
+						{
+							"Type": "Shortcut",
+							"DefaultName": "SoundObjInfo",
+							"DefaultArchivePath": "/StageData/%s/%sSound.arc",
+							"DefaultBcsvPath": "/Stage/jmp/Placement/%s/ObjInfo",
+							"Variables": [
+								{
+									"VariableName": "StageName",
+									"VariableGetMessage": "Enter the stage's file name:",
+									"VariableListType": "StageName"
+								},
+								{
+									"VariableName": "StageName",
+									"RequiredFile": "SMG2"
+								},
+								{
+									"VariableName": "Layer",
+									"VariableGetMessage": "Enter the layer (ex. 'LayerP' NOT 'P'):"
+								}
+							],
+							"DefaultTooltip": "Contains all sound-related objects, excluding areas."
+						}
+					]
+				},
+				{
 					"Type": "Separator",
 					"RequiredFile": "/ScenarioData/FileSelect.reg"
 				},
@@ -731,6 +804,31 @@
 							"DefaultArchivePath": "/ObjectData/NPCData.arc",
 							"DefaultBcsvPath": "/NPCData/TicoShopDiceItem.bcsv",
 							"RequiredFile": "SMG2"
+						}
+					]
+				},
+				{
+					"Type": "Menu",
+					"DefaultName": "MarioConst",
+					"DefaultTooltip": "Contains various constant parameters for Mario/Luigi/Yoshi.",
+					"MenuElements": [
+						{
+							"Type": "Shortcut",
+							"DefaultName": "MorphConditionTable",
+							"DefaultArchivePath": "/ObjectData/MarioConst.arc",
+							"DefaultBcsvPath": "/MarioConst/ActorInfo/MorphConditionTable.bcsv"
+						},
+						{
+							"Type": "Shortcut",
+							"DefaultName": "RushInfluenceTable",
+							"DefaultArchivePath": "/ObjectData/MarioConst.arc",
+							"DefaultBcsvPath": "/MarioConst/ActorInfo/RushInfluenceTable.bcsv"
+						},
+						{
+							"Type": "Shortcut",
+							"DefaultName": "ObjectInfluenceTable",
+							"DefaultArchivePath": "/ObjectData/MarioConst.arc",
+							"DefaultBcsvPath": "/MarioConst/ActorInfo/ObjectInfluenceTable.bcsv"
 						}
 					]
 				},
